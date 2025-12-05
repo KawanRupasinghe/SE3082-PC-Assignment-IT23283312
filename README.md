@@ -8,38 +8,48 @@ Algorithm: Midpoint Numerical Integration
 ## 1. Compilation Instructions
 
 ### Serial (macOS)
-cd Serial  
+```bash 
 gcc -O3 -std=c11 midpoint_serial.c -lm -o midpoint_serial
+```
 
 ### OpenMP (macOS)
-cd OpenMP  
+```bash 
 gcc -O3 -std=c11 -fopenmp midpoint_omp.c -lm -o midpoint_omp
+```
 
 ### MPI (macOS)
-cd MPI  
+```bash
 mpicc -O3 -std=c11 midpoint_mpi.c -lm -o midpoint_mpi
+```
 
 ### CUDA (Google Colab)
-cd CUDA  
+```bash 
 nvcc -O3 midpoint_cuda.cu -o midpoint_cuda
-
+```
 ---
 
 ## 2. Execution Instructions
 
 ### Serial
+```bash 
 ./midpoint_serial 0 1000 10000000
+```
 
 ### OpenMP
+```bash 
 export OMP_NUM_THREADS=<threads>  
 ./midpoint_omp 0 1000 10000000
+```
 
 ### MPI
+```bash 
 mpirun -np <processes> ./midpoint_mpi 0 1000 10000000
+```
 
 ### CUDA (Colab)
+```bash 
 ./midpoint_cuda 0 1000 10000000 <threads_per_block>
-
+```
 ---
 
 ## 4. Tested Configurations

@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/kawanr/Documents/SLIIT/Y3S1/PC/Assignment 03/Source Code",
+      "program": "/Users/kawanr/Documents/SLIIT/Y3S1/PC/Assignment 03/Source Code/build/Debug/outDebug"
+    }
+  ]
+}
